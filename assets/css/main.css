@@ -33,6 +33,7 @@ body {
 	line-height: 1;
 }
 
+
 ol, ul {
 	list-style: none;
 }
@@ -639,7 +640,7 @@ input, select, textarea {
   width: 90%;
   margin: 0 auto;
   display: block;
-  animation: rotate 10s 0s linear infinite;
+  animation: rotate 20s 0s linear infinite;
   fill: #fd7c4f;
   transition: all .4s;
 	position: center;
@@ -1146,6 +1147,12 @@ input, select, textarea {
 		line-height: calc(2.75rem - 2px);
 	}
 
+/*canvas {
+	z-index:-4;
+	background: transparent !important;
+	style="width: 1081px; height: 929px;
+}*/
+
 /* BG */
 
 	#bg {
@@ -1335,6 +1342,8 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			display: flex;
+			align-items: bottom;
 		}
 
 			#header .logo .icon:before {
@@ -1671,8 +1680,12 @@ input, select, textarea {
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		width: 100%;
 		max-width: 100%;
-		margin-top: 2rem;
+		margin-top: 5px;
+		margin-bottom: -50px;
+		height:80px;
+		clear: both;
 		text-align: center;
+		position: relative;
 	}
 
 		#footer .copyright {
@@ -1681,6 +1694,12 @@ input, select, textarea {
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
+		}
+
+		#footer .imageLogo{
+			height: 100%;
+			width:auto;
+			position:left;
 		}
 
 		body.is-article-visible #footer {
